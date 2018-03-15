@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-plt.plot(np.random.random(100))
+data = np.loadtxt("fecha_manchas.dat")
 
-plt.savefig('random.pdf')
+plt.plot(data[:,0], data[:,1])
+
+plt.savefig("fecha_manchas.pdf")
